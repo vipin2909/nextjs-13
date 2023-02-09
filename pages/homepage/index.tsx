@@ -7,8 +7,8 @@ const Landing = dynamic(() => import('../../modules/home/landing'));
 const HomePage = () => {
   return (
     <Fragment>
-      <Seo />
-      <Landing />
+      {/* <Seo />
+      <Landing /> */}
     </Fragment>
   );
 };
