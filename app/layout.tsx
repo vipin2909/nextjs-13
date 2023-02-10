@@ -8,6 +8,7 @@ export default function Layout({ children }) {
         <title>Next.js</title>
       </head>
       <body>
+        
         <div className={styles.header}>{children}</div>
       </body>
     </html>

@@ -37,6 +37,6 @@
     "**/*.ts",
     "**/*.tsx",
     "app/breaking/page.tsx"
-  ],
+, "modules/homepage/testimonials"  ],
   "exclude": ["node_modules"]
 }
