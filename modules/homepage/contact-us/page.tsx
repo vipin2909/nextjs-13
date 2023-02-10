@@ -1,7 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import styles from './styles';
-import TextField from '../../components/TextField';
+import TextField from '../../../components/TextField';
 
 const Box = dynamic(() => import('@mui/material/Box'));
 const Typography = dynamic(() => import('@mui/material/Typography'));
