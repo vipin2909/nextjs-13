@@ -1,30 +1,70 @@
 import { SxProps } from '@mui/material';
 import { CSSProperties } from 'react';
 import theme from '../../utils/theme';
-import Images from "../utils"
+import Images from '../../utils/constants/images';
 
 const styles: {
   [key in
     | 'contactContainer'
+    | 'headingTitle'
     | 'imageContainer'
     | 'nameEmailContainer'
     | 'nameTextField'
     | 'emailTextField'
-    | 'messageTextField']: CSSProperties & SxProps<typeof theme>;
+    | 'messageTextField'
+    | 'buttonContainer']: CSSProperties & SxProps<typeof theme>;
 } = {
   contactContainer: {
-    backgroundColor: 'red',
     width: '100%',
+    marginTop: '72px',
+    padding: '16px',
+    backgroundImage: `url(${Images.BACKGROUND_IMAGE})`,
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    '& .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input': {
+      color: 'white !important',
+    },
   },
-  imageContainer: {
-    width: '100%',
-    backgroundImage: "url()",
+  headingTitle: {
+    fontSize: '70px',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    textAlign: 'center',
+    fontFamily: 'khand, sansSerif',
+    fontWeight: 500,
+    marginBottom: '80px',
+    color: 'white',
+  },
 
+  nameEmailContainer: {
+    width: '90%',
+    display: 'flex',
+    justifyContent: 'space-between',
   },
-  nameEmailContainer: {},
-  nameTextField: {},
-  emailTextField: {},
-  messageTextField: {},
+  nameTextField: {
+    width: '48%',
+  },
+  emailTextField: {
+    width: '48%',
+  },
+  messageTextField: {
+    width: '90%',
+    marginTop: '60px',
+    '& .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input': {
+      height: '3.45rem',
+    },
+  },
+  buttonContainer: {
+    marginTop: '80px',
+    width: '90%',
+    backgroundColor: 'white',
+    color: '#aaa',
+    padding: '16px 24px 16px 24px',
+    border: 'none',
+    marginButtom: '60px',
+  },
 };
 
 export default styles;
