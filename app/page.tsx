@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { Box } from '@mui/material';
 
 export default function Page() {
-  return <Link href="../about">Hello, Next.js!
-  <Box >
-    
-  </Box>
-  
-  </Link>;
+  return (
+    <div>
+      <Link href="../contact">Contact Page</Link>
+      <hr />
+      <Link href="../testimonials">Testinmonials Page</Link>
+    </div>
+  );
 }

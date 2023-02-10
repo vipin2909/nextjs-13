@@ -7,6 +7,7 @@ const POOL_HOUSE = './poolHouse.jpg';
 const PRIVATE_HOUSE = './privateHouse.jpg';
 const CONCEPT = './theConcept.jpg';
 const SOCHI_VILLAS = './images/villasInSochi.jpg';
+const BACKGROUND_IMAGE = './images/backgroundImage.jpg';
 
 const Images = {
   BUGAN_VILLA,
@@ -18,6 +19,7 @@ const Images = {
   PRIVATE_HOUSE,
   CONCEPT,
   SOCHI_VILLAS,
+  BACKGROUND_IMAGE,
 };
 
 export default Images;

@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -22,7 +18,18 @@
       {
         "name": "next"
       }
-    ]
+    ],
+
+    // Using "baseUrl" allows you to use absolute paths
+    "baseUrl": ".",
+    // Using "paths" allows you to configure module path aliases
+    "paths": {
+      "@components/*": ["components/*"],
+      "@modules/*": ["modules/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@store/*": ["store/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -31,7 +38,5 @@
     "**/*.tsx",
     "app/breaking/page.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
