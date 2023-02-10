@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import styles from './styles';
 import { Card, Typography, Box } from '@mui/material';
 

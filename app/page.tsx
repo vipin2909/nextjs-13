@@ -1,18 +1,17 @@
-"use client"
-import "../styles/globals.css";
-import Link from "next/link";
-import dynamic from "next/dynamic";
+'use client';
+import '../styles/globals.css';
+import dynamic from 'next/dynamic';
 
-const Header = dynamic(() => import("@components/header"));
-
+const Header = dynamic(() => import('@components/header'));
+const HomePage = dynamic(() => import('@pages/homepage'));
+const Footer = dynamic(() => import('@components/footer'));
 
 export default function Page() {
   return (
     <div>
       <Header />
-      <Link href="../contact">Contact Page</Link>
-      <hr />
-      <Link href="../testimonials">Testimonials Page</Link>
+      <HomePage />
+      <Footer />
     </div>
   );
 }
