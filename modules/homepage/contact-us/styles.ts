@@ -35,7 +35,7 @@ const styles: {
     textTransform: 'uppercase',
     letterSpacing: '2px',
     textAlign: 'center',
-    fontFamily: '"Khand", sans-serif',
+    // fontFamily: '"Khand", sans-serif',
     fontWeight: 500,
     marginBottom: '80px',
     color: 'white',
