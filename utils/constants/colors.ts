@@ -1,9 +1,10 @@
 const COLORS = {
-  vieWhite: '#fff',
-  vieGolden: '#ffc107',
-  vieBackground: '#232323',
-  inputBackground: 'rgba(255, 255, 255, 0.01)',
-  vieBlack: '#343a40',
+  vieWhite: "#FFFFFF",
+  vieBlack: "#000000",
+  vieGolden: "#ffc107",
+  vieBackground: "#232323",
+  inputBackground: "rgba(255, 255, 255, 0.01)",
+  viedarkGrey: "#343a40",
 };
 
 export default COLORS;
