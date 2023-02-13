@@ -28,7 +28,8 @@
       "@modules/*": ["modules/*"],
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
-      "@store/*": ["store/*"]
+      "@store/*": ["store/*"],
+      "@pages/*": ["pages/*"]
     }
   },
   "include": [
@@ -36,7 +37,8 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/breaking/page.tsx"
+    "app/breaking/page.tsx",
+    "modules/homepage/testimonials"
   ],
   "exclude": ["node_modules"]
 }
