@@ -150,3 +150,8 @@ body,
   scroll-behavior: smooth;
   background: #181b20;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
