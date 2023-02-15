@@ -1,5 +1,6 @@
 import { memo } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 import useHeader from "./useHeader";
 import styles from "./styles";
@@ -16,8 +17,8 @@ const Header = () => {
           <Box sx={styles.navHeader}>
             {headerData.map((item) => {
               return (
-                <Box key={item.id} sx={styles.headerItem}>
-                  {item.name}
+                <Box key={item.id} sx={styles.headerItem} className="activateCursor">
+                  <Link href="#">{item.name}</Link>
                 </Box>
               );
             })}
