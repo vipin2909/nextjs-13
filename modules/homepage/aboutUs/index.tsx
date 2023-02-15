@@ -1,12 +1,16 @@
 import React, { FC } from 'react';
+import { useInView } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import styles from './styles';
 import { Images } from '@utils/constants';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
-import Link from 'next/link';
 
 const Box = dynamic(() => import('@mui/material/Box'));
+const Button = dynamic(() => import('@mui/material/Button'));
+const UpsideAnimationText = dynamic(
+  () => import('@components/upsideAnimationText')
+);
 
 const AboutUs: FC<{}> = () => {
   return (
@@ -18,23 +22,32 @@ const AboutUs: FC<{}> = () => {
           width={420}
           height={420}
         />
-        <Box>AboutUs</Box>
+        <Box>About Us</Box>
       </Box>
       <Box>
         <Box sx={styles.card}>
-          <Typography variant="h6" align="left">
+          <Typography
+            id="cardHeadText"
+            sx={styles.cardHead}
+            variant="h6"
+            align="left"
+          >
             01
           </Typography>
           <Typography variant="h5" align="left">
             Architecture
           </Typography>
-          <Typography component="p" align="left">
+          <UpsideAnimationText>
             We provide all equipment and services, etc and ensure a safe and
             secure project site.
-          </Typography>
-          <Link href="https://nextjs.org/docs/api-reference/next/link">
+          </UpsideAnimationText>
+
+          <Button
+            sx={styles.readMore}
+            href="https://nextjs.org/docs/api-reference/next/link"
+          >
             Read More
-          </Link>
+          </Button>
         </Box>
       </Box>
     </Box>

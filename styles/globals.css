@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Khand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
 
 html,
 body,
@@ -86,7 +86,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "Khand", sans-serif;
+  font-family: 'Khand', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -118,7 +118,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -144,9 +144,13 @@ html,
 body,
 #__next {
   height: 100vh;
-  font-family: "Khand", sans-serif;
+  font-family: 'Khand', sans-serif;
   overflow-x: hidden;
   position: relative;
   scroll-behavior: smooth;
   background: #181b20;
+}
+
+#cardHeadText {
+  -webkit-text-stroke: 1px #b19777;
 }
