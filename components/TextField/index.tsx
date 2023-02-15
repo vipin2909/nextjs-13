@@ -15,7 +15,8 @@ const TextField: FC<TextFieldProps> = ({ sx, placeholder, type }) => {
       sx={sx}
       placeholder={placeholder}
       type={type}
-      id="outlined-password-input"
+      id="filled-basic"
+      variant="filled"
     />
   );
 };
