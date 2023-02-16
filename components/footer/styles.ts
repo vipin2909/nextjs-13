@@ -23,9 +23,9 @@ const styles: {
 } = {
   footer_Container: {
     width: "100%",
-    position: "absolute",
-    bottom: "0",
-    left: "0",
+    // position: "absolute",
+    // bottom: "0",
+    // left: "0",
     minHeight: "25rem",
     marginTop: "72px",
     padding: "16px",
