@@ -150,3 +150,54 @@ body,
   scroll-behavior: smooth;
   background: #181b20;
 }
+
+#cardHeadText {
+  -webkit-text-stroke: 1px #b19777;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.customizedCursor {
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.cursorDotOutline {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c5a47e;
+  opacity: 0.5;
+  z-index: 10000001;
+  transition: all 0.08s ease-out;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: -12px;
+  margin-bottom: -12px;
+}
+
+.cursorDot {
+  width: 6px;
+  height: 6px;
+  z-index: 10000000;
+  background-color: #c5a47e;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hideCursor {
+  opacity: 0;
+}
+
+.cursorHover {
+  width: 70px;
+  height: 70px;
+  opacity: 0.3;
+  margin-left: -35px;
+  margin-top: -35px;
+}
