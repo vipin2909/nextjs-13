@@ -1,22 +1,22 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import styles from "./styles";
-import TextField from "../../components/TextField";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import CallIcon from "@mui/icons-material/Call";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase";
-import IconButton from "@mui/material/IconButton";
-import DirectionsIcon from "@mui/icons-material/Directions";
-import SendIcon from "@mui/icons-material/Send";
 const Box = dynamic(() => import("@mui/material/Box"));
+const InputBase = dynamic(() => import("@mui/material/InputBase"));
+const IconButton = dynamic(() => import("@mui/material/IconButton"));
 const Typography = dynamic(() => import("@mui/material/Typography"));
 const Button = dynamic(() => import("@mui/material/Button"));
+const Paper = dynamic(() => import("@mui/material/Paper"));
+const SendIcon = dynamic(() => import("@mui/icons-material/Send"));
+const LocationOnIcon = dynamic(() => import("@mui/icons-material/LocationOn"));
+const MailOutlineIcon = dynamic(
+  () => import("@mui/icons-material/MailOutline")
+);
+const CallIcon = dynamic(() => import("@mui/icons-material/Call"));
+const FacebookIcon = dynamic(() => import("@mui/icons-material/Facebook"));
+const TwitterIcon = dynamic(() => import("@mui/icons-material/Twitter"));
+const InstagramIcon = dynamic(() => import("@mui/icons-material/Instagram"));
+const YouTubeIcon = dynamic(() => import("@mui/icons-material/YouTube"));
 
 const Footer = () => {
   return (
