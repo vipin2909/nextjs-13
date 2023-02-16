@@ -58,7 +58,7 @@ const Cursor = () => {
         element.removeEventListener("mouseleave", cursorDeactivated);
       });
     };
-  }, []);
+  });
 
   return (
     <Fragment>
