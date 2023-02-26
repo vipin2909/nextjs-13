@@ -1,0 +1,31 @@
+.maincontainer {
+  padding: 16px 12px 16px 12px;
+  background: '#232323';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.cardContainer {
+  /* padding: 16px 12px 16px 12px;
+  background: '#232323'; */
+  display: flex;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}
+.cardImage {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.cardName {
+  font-size: 16px;
+}
+
+.carddesignation {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.cardDesc {
+  font-size: 32px;
+}
